@@ -6,7 +6,7 @@
   "scripts": {
     "scss:watch": "node-sass scss -o css -w",
     "scss:build": "node-sass scss -o css",
-    "serve": "browser-sync start --server --files \"css/*.css\" \"scss/*.scss\" \"*.html\" \"*.js\"",
+    "serve": "browser-sync start --server --files \"**/*.css\" \"**/*.scss\" \"**/*.html\" \"**/*.js\"",
     "dev": "npm run scss:build && concurrently --kill-others \"npm run serve\" \"npm run scss:watch\""
   },
   "author": "jibhey",
