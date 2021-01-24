@@ -1,0 +1,20 @@
+{
+  "name": "simple-demo-project",
+  "version": "1.0.0",
+  "description": "Starting project for simple demo with hot reload",
+  "main": "script.js",
+  "scripts": {
+    "scss:watch": "node-sass scss -o css -w",
+    "scss:build": "node-sass scss -o css",
+    "serve": "browser-sync start --server --files \"css/*.css\" \"scss/*.scss\" \"*.html\" \"*.js\"",
+    "dev": "npm run scss:build && concurrently --kill-others \"npm run serve\" \"npm run scss:watch\""
+  },
+  "author": "jibhey",
+  "license": "MIT License",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
