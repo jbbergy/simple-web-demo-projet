@@ -2,6 +2,11 @@
 A simple starting project with hot reload to quickly test your concepts
 
 ## Usage
+
+Fork the project or download localy and use it for testing your consepts
+
+## Commands
+
 `npm run dev` : run server with hot reload feature for scss, html and js
 
 `npm run serve` : run server with hot reload for css (not scss), html and js
